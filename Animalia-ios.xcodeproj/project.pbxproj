@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DF38D8D27EC181000B83617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38D8C27EC181000B83617 /* AppDelegate.swift */; };
+		6DF38D8F27EC181000B83617 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38D8E27EC181000B83617 /* SceneDelegate.swift */; };
+		6DF38D9627EC181100B83617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38D9527EC181100B83617 /* Assets.xcassets */; };
+		6DF38D9927EC181100B83617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38D9727EC181100B83617 /* LaunchScreen.storyboard */; };
+		6DF38DA827EC191500B83617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38D8C27EC181000B83617 /* AppDelegate.swift */; };
+		6DF38DA927EC191500B83617 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38D8E27EC181000B83617 /* SceneDelegate.swift */; };
+		6DF38DAC27EC191500B83617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38D9727EC181100B83617 /* LaunchScreen.storyboard */; };
+		6DF38DAD27EC191500B83617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38D9527EC181100B83617 /* Assets.xcassets */; };
+		6DF38DBC27EC1A2500B83617 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DB627EC1A2500B83617 /* BaseWireframe.swift */; };
+		6DF38DBD27EC1A2500B83617 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DB627EC1A2500B83617 /* BaseWireframe.swift */; };
+		6DF38DBE27EC1A2500B83617 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DB727EC1A2500B83617 /* FormatterInterface.swift */; };
+		6DF38DBF27EC1A2500B83617 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DB727EC1A2500B83617 /* FormatterInterface.swift */; };
+		6DF38DC027EC1A2500B83617 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DB827EC1A2500B83617 /* UIStoryboardExtension.swift */; };
+		6DF38DC127EC1A2500B83617 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DB827EC1A2500B83617 /* UIStoryboardExtension.swift */; };
+		6DF38DC227EC1A2500B83617 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DB927EC1A2500B83617 /* PresenterInterface.swift */; };
+		6DF38DC327EC1A2500B83617 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DB927EC1A2500B83617 /* PresenterInterface.swift */; };
+		6DF38DC427EC1A2500B83617 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DBA27EC1A2500B83617 /* ViewInterface.swift */; };
+		6DF38DC527EC1A2500B83617 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DBA27EC1A2500B83617 /* ViewInterface.swift */; };
+		6DF38DC627EC1A2500B83617 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DBB27EC1A2500B83617 /* InteractorInterface.swift */; };
+		6DF38DC727EC1A2500B83617 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DBB27EC1A2500B83617 /* InteractorInterface.swift */; };
+		6DF38DCE27EC1A4300B83617 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38DC827EC1A4300B83617 /* Login.storyboard */; };
+		6DF38DCF27EC1A4300B83617 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38DC827EC1A4300B83617 /* Login.storyboard */; };
+		6DF38DD027EC1A4300B83617 /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DC927EC1A4300B83617 /* LoginInterfaces.swift */; };
+		6DF38DD127EC1A4300B83617 /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DC927EC1A4300B83617 /* LoginInterfaces.swift */; };
+		6DF38DD227EC1A4300B83617 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DCA27EC1A4300B83617 /* LoginPresenter.swift */; };
+		6DF38DD327EC1A4300B83617 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DCA27EC1A4300B83617 /* LoginPresenter.swift */; };
+		6DF38DD427EC1A4300B83617 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DCB27EC1A4300B83617 /* LoginViewController.swift */; };
+		6DF38DD527EC1A4300B83617 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DCB27EC1A4300B83617 /* LoginViewController.swift */; };
+		6DF38DD627EC1A4300B83617 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DCC27EC1A4300B83617 /* LoginInteractor.swift */; };
+		6DF38DD727EC1A4300B83617 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DCC27EC1A4300B83617 /* LoginInteractor.swift */; };
+		6DF38DD827EC1A4300B83617 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DCD27EC1A4300B83617 /* LoginWireframe.swift */; };
+		6DF38DD927EC1A4300B83617 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38DCD27EC1A4300B83617 /* LoginWireframe.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6DF38D8927EC181000B83617 /* AnimaliaProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimaliaProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF38D8C27EC181000B83617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DF38D8E27EC181000B83617 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6DF38D9527EC181100B83617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DF38D9827EC181100B83617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DF38D9A27EC181100B83617 /* AnimaliaProd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AnimaliaProd.plist; sourceTree = "<group>"; };
+		6DF38DB227EC191500B83617 /* AnimaliaDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimaliaDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF38DB427EC196500B83617 /* AnimaliaDev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AnimaliaDev.plist; path = "Animalia-ios/Application/AnimaliaDev.plist"; sourceTree = SOURCE_ROOT; };
+		6DF38DB627EC1A2500B83617 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		6DF38DB727EC1A2500B83617 /* FormatterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
+		6DF38DB827EC1A2500B83617 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		6DF38DB927EC1A2500B83617 /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		6DF38DBA27EC1A2500B83617 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		6DF38DBB27EC1A2500B83617 /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		6DF38DC827EC1A4300B83617 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		6DF38DC927EC1A4300B83617 /* LoginInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaces.swift; sourceTree = "<group>"; };
+		6DF38DCA27EC1A4300B83617 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		6DF38DCB27EC1A4300B83617 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6DF38DCC27EC1A4300B83617 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		6DF38DCD27EC1A4300B83617 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DF38D8627EC181000B83617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF38DAA27EC191500B83617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DF38D8027EC181000B83617 = {
+			isa = PBXGroup;
+			children = (
+				6DF38D8B27EC181000B83617 /* Animalia-ios */,
+				6DF38D8A27EC181000B83617 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DF38D8A27EC181000B83617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DF38D8927EC181000B83617 /* AnimaliaProd.app */,
+				6DF38DB227EC191500B83617 /* AnimaliaDev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DF38D8B27EC181000B83617 /* Animalia-ios */ = {
+			isa = PBXGroup;
+			children = (
+				6DF38DA027EC181900B83617 /* Application */,
+				6DF38DA227EC183600B83617 /* Resources */,
+				6DF38DA327EC184700B83617 /* Common */,
+				6DF38DA127EC182100B83617 /* Modules */,
+			);
+			path = "Animalia-ios";
+			sourceTree = "<group>";
+		};
+		6DF38DA027EC181900B83617 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6DF38DB427EC196500B83617 /* AnimaliaDev.plist */,
+				6DF38D9A27EC181100B83617 /* AnimaliaProd.plist */,
+				6DF38D8C27EC181000B83617 /* AppDelegate.swift */,
+				6DF38D8E27EC181000B83617 /* SceneDelegate.swift */,
+				6DF38D9727EC181100B83617 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6DF38DA127EC182100B83617 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6DF38DB527EC19D500B83617 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6DF38DA227EC183600B83617 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DF38D9527EC181100B83617 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DF38DA327EC184700B83617 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6DF38DA427EC188A00B83617 /* VIPER */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6DF38DA427EC188A00B83617 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				6DF38DB627EC1A2500B83617 /* BaseWireframe.swift */,
+				6DF38DB727EC1A2500B83617 /* FormatterInterface.swift */,
+				6DF38DB827EC1A2500B83617 /* UIStoryboardExtension.swift */,
+				6DF38DB927EC1A2500B83617 /* PresenterInterface.swift */,
+				6DF38DBA27EC1A2500B83617 /* ViewInterface.swift */,
+				6DF38DBB27EC1A2500B83617 /* InteractorInterface.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		6DF38DB527EC19D500B83617 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6DF38DC827EC1A4300B83617 /* Login.storyboard */,
+				6DF38DC927EC1A4300B83617 /* LoginInterfaces.swift */,
+				6DF38DCA27EC1A4300B83617 /* LoginPresenter.swift */,
+				6DF38DCB27EC1A4300B83617 /* LoginViewController.swift */,
+				6DF38DCC27EC1A4300B83617 /* LoginInteractor.swift */,
+				6DF38DCD27EC1A4300B83617 /* LoginWireframe.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DF38D8827EC181000B83617 /* AnimaliaProd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF38D9D27EC181100B83617 /* Build configuration list for PBXNativeTarget "AnimaliaProd" */;
+			buildPhases = (
+				6DF38D8527EC181000B83617 /* Sources */,
+				6DF38D8627EC181000B83617 /* Frameworks */,
+				6DF38D8727EC181000B83617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimaliaProd;
+			productName = "Animalia-ios";
+			productReference = 6DF38D8927EC181000B83617 /* AnimaliaProd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DF38DA527EC191500B83617 /* AnimaliaDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF38DAF27EC191500B83617 /* Build configuration list for PBXNativeTarget "AnimaliaDev" */;
+			buildPhases = (
+				6DF38DA627EC191500B83617 /* Sources */,
+				6DF38DAA27EC191500B83617 /* Frameworks */,
+				6DF38DAB27EC191500B83617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimaliaDev;
+			productName = "Animalia-ios";
+			productReference = 6DF38DB227EC191500B83617 /* AnimaliaDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DF38D8127EC181000B83617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					6DF38D8827EC181000B83617 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 6DF38D8427EC181000B83617 /* Build configuration list for PBXProject "Animalia-ios" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DF38D8027EC181000B83617;
+			productRefGroup = 6DF38D8A27EC181000B83617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DF38D8827EC181000B83617 /* AnimaliaProd */,
+				6DF38DA527EC191500B83617 /* AnimaliaDev */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DF38D8727EC181000B83617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF38DCE27EC1A4300B83617 /* Login.storyboard in Resources */,
+				6DF38D9927EC181100B83617 /* LaunchScreen.storyboard in Resources */,
+				6DF38D9627EC181100B83617 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF38DAB27EC191500B83617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF38DCF27EC1A4300B83617 /* Login.storyboard in Resources */,
+				6DF38DAC27EC191500B83617 /* LaunchScreen.storyboard in Resources */,
+				6DF38DAD27EC191500B83617 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DF38D8527EC181000B83617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF38DD427EC1A4300B83617 /* LoginViewController.swift in Sources */,
+				6DF38D8D27EC181000B83617 /* AppDelegate.swift in Sources */,
+				6DF38DC427EC1A2500B83617 /* ViewInterface.swift in Sources */,
+				6DF38DD827EC1A4300B83617 /* LoginWireframe.swift in Sources */,
+				6DF38DD027EC1A4300B83617 /* LoginInterfaces.swift in Sources */,
+				6DF38DD227EC1A4300B83617 /* LoginPresenter.swift in Sources */,
+				6DF38D8F27EC181000B83617 /* SceneDelegate.swift in Sources */,
+				6DF38DBE27EC1A2500B83617 /* FormatterInterface.swift in Sources */,
+				6DF38DC027EC1A2500B83617 /* UIStoryboardExtension.swift in Sources */,
+				6DF38DC627EC1A2500B83617 /* InteractorInterface.swift in Sources */,
+				6DF38DD627EC1A4300B83617 /* LoginInteractor.swift in Sources */,
+				6DF38DBC27EC1A2500B83617 /* BaseWireframe.swift in Sources */,
+				6DF38DC227EC1A2500B83617 /* PresenterInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF38DA627EC191500B83617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF38DD527EC1A4300B83617 /* LoginViewController.swift in Sources */,
+				6DF38DA827EC191500B83617 /* AppDelegate.swift in Sources */,
+				6DF38DC527EC1A2500B83617 /* ViewInterface.swift in Sources */,
+				6DF38DD927EC1A4300B83617 /* LoginWireframe.swift in Sources */,
+				6DF38DD127EC1A4300B83617 /* LoginInterfaces.swift in Sources */,
+				6DF38DD327EC1A4300B83617 /* LoginPresenter.swift in Sources */,
+				6DF38DA927EC191500B83617 /* SceneDelegate.swift in Sources */,
+				6DF38DBF27EC1A2500B83617 /* FormatterInterface.swift in Sources */,
+				6DF38DC127EC1A2500B83617 /* UIStoryboardExtension.swift in Sources */,
+				6DF38DC727EC1A2500B83617 /* InteractorInterface.swift in Sources */,
+				6DF38DD727EC1A4300B83617 /* LoginInteractor.swift in Sources */,
+				6DF38DBD27EC1A2500B83617 /* BaseWireframe.swift in Sources */,
+				6DF38DC327EC1A2500B83617 /* PresenterInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6DF38D9727EC181100B83617 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DF38D9827EC181100B83617 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DF38D9B27EC181100B83617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DF38D9C27EC181100B83617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DF38D9E27EC181100B83617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z84GQ55RVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Animalia-ios/Application/AnimaliaProd.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Animalia-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6DF38D9F27EC181100B83617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z84GQ55RVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Animalia-ios/Application/AnimaliaProd.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Animalia-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6DF38DB027EC191500B83617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z84GQ55RVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Animalia-ios/Application/AnimaliaDev.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Animalia-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6DF38DB127EC191500B83617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z84GQ55RVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Animalia-ios/Application/AnimaliaDev.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Animalia-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DF38D8427EC181000B83617 /* Build configuration list for PBXProject "Animalia-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF38D9B27EC181100B83617 /* Debug */,
+				6DF38D9C27EC181100B83617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF38D9D27EC181100B83617 /* Build configuration list for PBXNativeTarget "AnimaliaProd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF38D9E27EC181100B83617 /* Debug */,
+				6DF38D9F27EC181100B83617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF38DAF27EC191500B83617 /* Build configuration list for PBXNativeTarget "AnimaliaDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF38DB027EC191500B83617 /* Debug */,
+				6DF38DB127EC191500B83617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DF38D8127EC181000B83617 /* Project object */;
+}
