@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6DF38DA527EC191500B83617"
-               BuildableName = "Animalia-ios copy.app"
+               BuildableName = "AnimaliaDev.app"
                BlueprintName = "AnimaliaDev"
                ReferencedContainer = "container:Animalia-ios.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6DF38DA527EC191500B83617"
-            BuildableName = "Animalia-ios copy.app"
+            BuildableName = "AnimaliaDev.app"
             BlueprintName = "AnimaliaDev"
             ReferencedContainer = "container:Animalia-ios.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6DF38DA527EC191500B83617"
-            BuildableName = "Animalia-ios copy.app"
+            BuildableName = "AnimaliaDev.app"
             BlueprintName = "AnimaliaDev"
             ReferencedContainer = "container:Animalia-ios.xcodeproj">
          </BuildableReference>
