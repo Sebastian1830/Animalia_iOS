@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "jpegtopdf_26Mar22_191527.pdf",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "jpegtopdf_26Mar22_191609.pdf",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "jpegtopdf_26Mar22_191658.pdf",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
