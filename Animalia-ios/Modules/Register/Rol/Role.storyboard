@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zIc-eW-6fX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbE-ac-IW0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Role View Controller-->
         <scene sceneID="XJ1-QA-Nrj">
@@ -16,18 +25,165 @@
                     <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para empezar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otf-yI-d1y">
+                                <rect key="frame" x="34" y="119" width="346" height="29.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para poder iniciar hay 2 tipos de usuarios en los cuales " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZM-lG-HNJ">
+                                <rect key="frame" x="34" y="148.5" width="346" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <color key="textColor" name="DetailTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="A9K-3W-LeQ">
+                                <rect key="frame" x="34" y="224" width="346" height="220"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5H-Wx-mya" customClass="CheckboxGroup" customModule="AnimaliaDev" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="E1l-lf-nnI"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="id" value="entity"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="group" value="roles"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="iconItem" value="Entity"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleItem" value="Entidad"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="detailItem">
+                                                <string key="value">Quien ayudar a animales sin hogar y/o 
+reportar mascotas perdidas</string>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tapEntity:" destination="zIc-eW-6fX" eventType="touchUpInside" id="LdK-vc-Usr"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJc-9q-ye8" userLabel="Person" customClass="CheckboxGroup" customModule="AnimaliaDev" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="346" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="fJw-0R-SSF"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="id" value="person"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="group" value="roles"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="iconItem" value="Person"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleItem" value="Persona"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="detailItem">
+                                                <string key="value">Quien ayudar a animales sin hogar y/o 
+reportar mascotas perdidas</string>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tapPerson:" destination="zIc-eW-6fX" eventType="touchUpInside" id="Uh4-yJ-2qz"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3x-I6-aXx">
+                                <rect key="frame" x="64" y="487" width="286" height="50"/>
+                                <color key="backgroundColor" name="PrimaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ye5-wo-T0C"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Continuar">
+                                    <fontDescription key="titleFontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maksToBound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h3x-I6-aXx" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="64" id="0Bs-Ac-907"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="A9K-3W-LeQ" secondAttribute="trailing" constant="34" id="236-Z2-HLO"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="otf-yI-d1y" secondAttribute="trailing" constant="34" id="65H-NR-sZu"/>
+                            <constraint firstItem="A9K-3W-LeQ" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="34" id="EuZ-6A-lcV"/>
+                            <constraint firstItem="CZM-lG-HNJ" firstAttribute="top" secondItem="otf-yI-d1y" secondAttribute="bottom" id="Kgr-fw-u6A"/>
+                            <constraint firstItem="otf-yI-d1y" firstAttribute="top" secondItem="3pi-N7-nbV" secondAttribute="top" constant="31" id="NYP-Fs-dKF"/>
+                            <constraint firstItem="CZM-lG-HNJ" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="34" id="RDO-R4-QYc"/>
+                            <constraint firstItem="h3x-I6-aXx" firstAttribute="top" secondItem="A9K-3W-LeQ" secondAttribute="bottom" constant="43" id="V80-pL-ap1"/>
+                            <constraint firstItem="otf-yI-d1y" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="Xma-Jr-0uF"/>
+                            <constraint firstItem="otf-yI-d1y" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="34" id="c7j-kO-ufM"/>
+                            <constraint firstItem="CZM-lG-HNJ" firstAttribute="centerX" secondItem="otf-yI-d1y" secondAttribute="centerX" id="eNL-4D-rVA"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="h3x-I6-aXx" secondAttribute="trailing" constant="64" id="eWY-XD-vpJ"/>
+                            <constraint firstItem="A9K-3W-LeQ" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="tbU-li-WZf"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="CZM-lG-HNJ" secondAttribute="trailing" constant="34" id="udk-An-K09"/>
+                            <constraint firstItem="A9K-3W-LeQ" firstAttribute="top" secondItem="CZM-lG-HNJ" secondAttribute="bottom" constant="60" id="xaw-Mo-gHa"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="U8T-tP-6BB"/>
+                    <connections>
+                        <outlet property="entity" destination="s5H-Wx-mya" id="NUp-7B-5eD"/>
+                        <outlet property="person" destination="HJc-9q-ye8" id="4wO-Gi-6Hf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="303"/>
+            <point key="canvasLocation" x="1214.4927536231885" y="302.00892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gZq-1v-vBC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kbE-ac-IW0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rQB-R0-tIb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zIc-eW-6fX" kind="relationship" relationship="rootViewController" id="rft-l4-i38"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DmX-tf-uCc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="302"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="HJc-9q-ye8">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="s5H-Wx-mya">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="Entity" width="84" height="84"/>
+        <image name="Person" width="84" height="84"/>
         <namedColor name="BackgroundColor">
             <color red="0.98039215686274506" green="0.98431372549019602" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="DetailTextColor">
+            <color red="0.69411764705882351" green="0.69803921568627447" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryColor">
+            <color red="0.99607843137254903" green="0.89803921568627454" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -12,19 +12,51 @@ import UIKit
 
 final class RoleViewController: UIViewController {
 
+    @IBOutlet weak var entity: CheckboxGroup!
+    @IBOutlet weak var person: CheckboxGroup!
+    
+    @IBAction func tapEntity(_ sender: Any) {
+        entity.actionSelected()
+    }
+    
+    @IBAction func tapPerson(_ sender: Any) {
+        person.actionSelected()
+    }
+    
     // MARK: - Public properties -
 
     var presenter: RolePresenterInterface!
+    private var groupSelected: String?
+    private var idSelected: String?
 
     // MARK: - Lifecycle -
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
     }
-
+    
+    func setupView() {
+        entity.delegate = self
+        person.delegate = self
+    }
+    
+    func setupSelect() {
+        guard let group = self.groupSelected, let id = self.idSelected else { return }
+        entity.selectStyleFor(group, id)
+        person.selectStyleFor(group, id)
+    }
 }
 
 // MARK: - Extensions -
 
 extension RoleViewController: RoleViewInterface {
+}
+
+extension RoleViewController: CustomCheckboxGroupDelegate {
+    func selectCheckbox(_ group: String, _ id: String) {
+        self.groupSelected = group
+        self.idSelected = id
+        self.setupSelect()
+    }
 }
