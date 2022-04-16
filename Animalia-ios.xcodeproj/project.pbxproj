@@ -13,6 +13,12 @@
 		6D07FE192805F660002B5475 /* CheckboxGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07FE172805F660002B5475 /* CheckboxGroup.swift */; };
 		6D07FE1E2805F6A3002B5475 /* CheckboxGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D07FE1D2805F6A3002B5475 /* CheckboxGroup.xib */; };
 		6D07FE1F2805F6A3002B5475 /* CheckboxGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D07FE1D2805F6A3002B5475 /* CheckboxGroup.xib */; };
+		6D4D847D280B2F7A00373E9E /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D847C280B2F7A00373E9E /* Commons.swift */; };
+		6D4D847E280B2F7A00373E9E /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D847C280B2F7A00373E9E /* Commons.swift */; };
+		6D4D8482280B337400373E9E /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D8481280B337400373E9E /* SignIn.swift */; };
+		6D4D8483280B337400373E9E /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D8481280B337400373E9E /* SignIn.swift */; };
+		6D4D8485280B349500373E9E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D8484280B349500373E9E /* Colors.swift */; };
+		6D4D8486280B349500373E9E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D8484280B349500373E9E /* Colors.swift */; };
 		6DF38D8D27EC181000B83617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38D8C27EC181000B83617 /* AppDelegate.swift */; };
 		6DF38D8F27EC181000B83617 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38D8E27EC181000B83617 /* SceneDelegate.swift */; };
 		6DF38D9627EC181100B83617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38D9527EC181100B83617 /* Assets.xcassets */; };
@@ -103,6 +109,9 @@
 		423B5E30E03D45ECF988132D /* Pods_AnimaliaDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimaliaDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D07FE172805F660002B5475 /* CheckboxGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxGroup.swift; sourceTree = "<group>"; };
 		6D07FE1D2805F6A3002B5475 /* CheckboxGroup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckboxGroup.xib; sourceTree = "<group>"; };
+		6D4D847C280B2F7A00373E9E /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		6D4D8481280B337400373E9E /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		6D4D8484280B349500373E9E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		6DF38D8927EC181000B83617 /* AnimaliaProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimaliaProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF38D8C27EC181000B83617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF38D8E27EC181000B83617 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +202,31 @@
 			path = CheckboxGroup;
 			sourceTree = "<group>";
 		};
+		6D4D847B280B2E2100373E9E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6D4D847C280B2F7A00373E9E /* Commons.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6D4D847F280B331E00373E9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D4D8480280B333200373E9E /* Entities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D4D8480280B333200373E9E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6D4D8481280B337400373E9E /* SignIn.swift */,
+				6D4D8484280B349500373E9E /* Colors.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		6DF38D8027EC181000B83617 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +291,8 @@
 		6DF38DA327EC184700B83617 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6D4D847F280B331E00373E9E /* Models */,
+				6D4D847B280B2E2100373E9E /* Utils */,
 				6D07FE122805F564002B5475 /* UIComponents */,
 				6DF38DA427EC188A00B83617 /* VIPER */,
 			);
@@ -557,9 +593,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF38E2427F1852900B83617 /* RolePresenter.swift in Sources */,
+				6D4D8486280B349500373E9E /* Colors.swift in Sources */,
 				6DF38DD427EC1A4300B83617 /* LoginViewController.swift in Sources */,
 				6DF38E2827F1852900B83617 /* RoleInteractor.swift in Sources */,
 				6DF38D8D27EC181000B83617 /* AppDelegate.swift in Sources */,
+				6D4D8483280B337400373E9E /* SignIn.swift in Sources */,
 				6DF38DC427EC1A2500B83617 /* ViewInterface.swift in Sources */,
 				6DF38E2627F1852900B83617 /* RoleViewController.swift in Sources */,
 				6D07FE192805F660002B5475 /* CheckboxGroup.swift in Sources */,
@@ -568,6 +606,7 @@
 				6DF38E2A27F1852900B83617 /* RoleWireframe.swift in Sources */,
 				6DF38DD027EC1A4300B83617 /* LoginInterfaces.swift in Sources */,
 				6DF38DD227EC1A4300B83617 /* LoginPresenter.swift in Sources */,
+				6D4D847E280B2F7A00373E9E /* Commons.swift in Sources */,
 				6DF38D8F27EC181000B83617 /* SceneDelegate.swift in Sources */,
 				6DF38DBE27EC1A2500B83617 /* FormatterInterface.swift in Sources */,
 				6DF38DC027EC1A2500B83617 /* UIStoryboardExtension.swift in Sources */,
@@ -583,9 +622,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF38E2527F1852900B83617 /* RolePresenter.swift in Sources */,
+				6D4D8485280B349500373E9E /* Colors.swift in Sources */,
 				6DF38DD527EC1A4300B83617 /* LoginViewController.swift in Sources */,
 				6DF38E2927F1852900B83617 /* RoleInteractor.swift in Sources */,
 				6DF38DA827EC191500B83617 /* AppDelegate.swift in Sources */,
+				6D4D8482280B337400373E9E /* SignIn.swift in Sources */,
 				6DF38DC527EC1A2500B83617 /* ViewInterface.swift in Sources */,
 				6DF38E2727F1852900B83617 /* RoleViewController.swift in Sources */,
 				6D07FE182805F660002B5475 /* CheckboxGroup.swift in Sources */,
@@ -594,6 +635,7 @@
 				6DF38E2B27F1852900B83617 /* RoleWireframe.swift in Sources */,
 				6DF38DD127EC1A4300B83617 /* LoginInterfaces.swift in Sources */,
 				6DF38DD327EC1A4300B83617 /* LoginPresenter.swift in Sources */,
+				6D4D847D280B2F7A00373E9E /* Commons.swift in Sources */,
 				6DF38DA927EC191500B83617 /* SceneDelegate.swift in Sources */,
 				6DF38DBF27EC1A2500B83617 /* FormatterInterface.swift in Sources */,
 				6DF38DC127EC1A2500B83617 /* UIStoryboardExtension.swift in Sources */,

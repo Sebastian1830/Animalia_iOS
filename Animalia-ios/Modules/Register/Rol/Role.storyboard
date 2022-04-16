@@ -108,6 +108,9 @@ reportar mascotas perdidas</string>
                                         <integer key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="contiueButton:" destination="zIc-eW-6fX" eventType="touchUpInside" id="eZ6-9k-MTq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>

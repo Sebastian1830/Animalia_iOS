@@ -13,7 +13,12 @@ protocol CustomCheckboxGroupDelegate {
 
 @IBDesignable
 class CheckboxGroup: UIButton {
+    
+    // MARK: - properties
+    private var callback: (() -> ())?
+    var delegate: CustomCheckboxGroupDelegate?
 
+    // MARK: - Outlets and Actions
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var details: UILabel!
@@ -37,11 +42,8 @@ class CheckboxGroup: UIButton {
             details.text = newValue
         }
     }
-
-    private var callback: (() -> ())?
-    var delegate: CustomCheckboxGroupDelegate?
     
-    
+    // MARK: - Lifecycle's Methods
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialize()
@@ -54,6 +56,7 @@ class CheckboxGroup: UIButton {
         setupView()
     }
     
+    // MARK: - Functions
     private func initialize(){
         insideview = loadViewFromNib()
         setupUI(view: insideview ?? UIView())
@@ -68,26 +71,13 @@ class CheckboxGroup: UIButton {
     private func setupUI(view: UIView?){
         view?.frame = self.bounds
         addSubview(view ?? UIView())
-        clearConstraints()
-    }
-    
-    private func clearConstraints(){
-        insideview?.translatesAutoresizingMaskIntoConstraints = false
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[childView]|",
-                              options: [],
-                              metrics: nil,
-                              views: ["childView": insideview ?? UIView()]))
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[childView]|",
-                              options: [],
-                              metrics: nil,
-                              views: ["childView": insideview ?? UIView()]))
     }
     
     private func setupView() {
         container.backgroundColor = .clear
         container.isOpaque = false
         container.layer.borderWidth = 2
-        container.layer.borderColor = UIColor(named: "BorderColor")?.cgColor
+        container.layer.borderColor = UIColor(named: Colors.BorderColor.rawValue)?.cgColor
         container.layer.masksToBounds = true
         container.layer.cornerRadius = 25
     }
@@ -104,9 +94,9 @@ class CheckboxGroup: UIButton {
     
     public func selectStyleFor(_ group: String, _ id: String) {
         if self.group == group && self.id == id {
-            container.layer.borderColor = UIColor(named: "PrimaryColor")?.cgColor
+            container.layer.borderColor = UIColor(named: Colors.PrimaryColor.rawValue)?.cgColor
         } else {
-            container.layer.borderColor = UIColor(named: "BorderColor")?.cgColor
+            container.layer.borderColor = UIColor(named: Colors.BorderColor.rawValue)?.cgColor
         }
     }
     

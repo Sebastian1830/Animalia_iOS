@@ -11,7 +11,15 @@
 import UIKit
 
 final class RoleViewController: UIViewController {
+    
+    // MARK: - properties
 
+    var presenter: RolePresenterInterface!
+    private var groupSelected: String?
+    private var idSelected: String?
+
+    // MARK: - Outlets and Actions
+    
     @IBOutlet weak var entity: CheckboxGroup!
     @IBOutlet weak var person: CheckboxGroup!
     
@@ -23,32 +31,33 @@ final class RoleViewController: UIViewController {
         person.actionSelected()
     }
     
-    // MARK: - Public properties -
-
-    var presenter: RolePresenterInterface!
-    private var groupSelected: String?
-    private var idSelected: String?
-
-    // MARK: - Lifecycle -
+    @IBAction func contiueButton(_ sender: Any) {
+        print(groupSelected ?? "", idSelected ?? "")
+    }
+    
+    // MARK: - Lifecycle's Methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
     
+    // MARK: - Functions
+    
     func setupView() {
         entity.delegate = self
         person.delegate = self
+        entity.actionSelected()
     }
     
-    func setupSelect() {
+    func selectedGroup() {
         guard let group = self.groupSelected, let id = self.idSelected else { return }
         entity.selectStyleFor(group, id)
         person.selectStyleFor(group, id)
     }
 }
 
-// MARK: - Extensions -
+// MARK: - Extensions
 
 extension RoleViewController: RoleViewInterface {
 }
@@ -57,6 +66,6 @@ extension RoleViewController: CustomCheckboxGroupDelegate {
     func selectCheckbox(_ group: String, _ id: String) {
         self.groupSelected = group
         self.idSelected = id
-        self.setupSelect()
+        self.selectedGroup()
     }
 }
