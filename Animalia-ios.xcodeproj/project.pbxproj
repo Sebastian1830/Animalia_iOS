@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16F92548F7CF1E85FC5930C6 /* Pods_AnimaliaProd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E273E716A737DFF3977D1E70 /* Pods_AnimaliaProd.framework */; };
+		3646203E827AB6FE4E13F366 /* Pods_AnimaliaDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423B5E30E03D45ECF988132D /* Pods_AnimaliaDev.framework */; };
+		6D07FE182805F660002B5475 /* CheckboxGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07FE172805F660002B5475 /* CheckboxGroup.swift */; };
+		6D07FE192805F660002B5475 /* CheckboxGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D07FE172805F660002B5475 /* CheckboxGroup.swift */; };
+		6D07FE1E2805F6A3002B5475 /* CheckboxGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D07FE1D2805F6A3002B5475 /* CheckboxGroup.xib */; };
+		6D07FE1F2805F6A3002B5475 /* CheckboxGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D07FE1D2805F6A3002B5475 /* CheckboxGroup.xib */; };
+		6D4D847D280B2F7A00373E9E /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D847C280B2F7A00373E9E /* Commons.swift */; };
+		6D4D847E280B2F7A00373E9E /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D847C280B2F7A00373E9E /* Commons.swift */; };
+		6D4D8482280B337400373E9E /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D8481280B337400373E9E /* SignIn.swift */; };
+		6D4D8483280B337400373E9E /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D8481280B337400373E9E /* SignIn.swift */; };
+		6D4D8485280B349500373E9E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D8484280B349500373E9E /* Colors.swift */; };
+		6D4D8486280B349500373E9E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D8484280B349500373E9E /* Colors.swift */; };
 		6DF38D8D27EC181000B83617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38D8C27EC181000B83617 /* AppDelegate.swift */; };
 		6DF38D8F27EC181000B83617 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38D8E27EC181000B83617 /* SceneDelegate.swift */; };
 		6DF38D9627EC181100B83617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38D9527EC181100B83617 /* Assets.xcassets */; };
@@ -79,9 +91,27 @@
 		6DF38E1527EE0D3D00B83617 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38DF027EE0D3D00B83617 /* Roboto-Thin.ttf */; };
 		6DF38E1627EE0D3D00B83617 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38DF127EE0D3D00B83617 /* Roboto-Black.ttf */; };
 		6DF38E1727EE0D3D00B83617 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38DF127EE0D3D00B83617 /* Roboto-Black.ttf */; };
+		6DF38E2027F1852900B83617 /* Role.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38E1A27F1852900B83617 /* Role.storyboard */; };
+		6DF38E2127F1852900B83617 /* Role.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF38E1A27F1852900B83617 /* Role.storyboard */; };
+		6DF38E2227F1852900B83617 /* RoleInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38E1B27F1852900B83617 /* RoleInterfaces.swift */; };
+		6DF38E2327F1852900B83617 /* RoleInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38E1B27F1852900B83617 /* RoleInterfaces.swift */; };
+		6DF38E2427F1852900B83617 /* RolePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38E1C27F1852900B83617 /* RolePresenter.swift */; };
+		6DF38E2527F1852900B83617 /* RolePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38E1C27F1852900B83617 /* RolePresenter.swift */; };
+		6DF38E2627F1852900B83617 /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38E1D27F1852900B83617 /* RoleViewController.swift */; };
+		6DF38E2727F1852900B83617 /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38E1D27F1852900B83617 /* RoleViewController.swift */; };
+		6DF38E2827F1852900B83617 /* RoleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38E1E27F1852900B83617 /* RoleInteractor.swift */; };
+		6DF38E2927F1852900B83617 /* RoleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38E1E27F1852900B83617 /* RoleInteractor.swift */; };
+		6DF38E2A27F1852900B83617 /* RoleWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38E1F27F1852900B83617 /* RoleWireframe.swift */; };
+		6DF38E2B27F1852900B83617 /* RoleWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF38E1F27F1852900B83617 /* RoleWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		423B5E30E03D45ECF988132D /* Pods_AnimaliaDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimaliaDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D07FE172805F660002B5475 /* CheckboxGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxGroup.swift; sourceTree = "<group>"; };
+		6D07FE1D2805F6A3002B5475 /* CheckboxGroup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckboxGroup.xib; sourceTree = "<group>"; };
+		6D4D847C280B2F7A00373E9E /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		6D4D8481280B337400373E9E /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		6D4D8484280B349500373E9E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		6DF38D8927EC181000B83617 /* AnimaliaProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimaliaProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF38D8C27EC181000B83617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF38D8E27EC181000B83617 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +152,17 @@
 		6DF38DEF27EE0D3D00B83617 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		6DF38DF027EE0D3D00B83617 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		6DF38DF127EE0D3D00B83617 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		6DF38E1A27F1852900B83617 /* Role.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Role.storyboard; sourceTree = "<group>"; };
+		6DF38E1B27F1852900B83617 /* RoleInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleInterfaces.swift; sourceTree = "<group>"; };
+		6DF38E1C27F1852900B83617 /* RolePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolePresenter.swift; sourceTree = "<group>"; };
+		6DF38E1D27F1852900B83617 /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
+		6DF38E1E27F1852900B83617 /* RoleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleInteractor.swift; sourceTree = "<group>"; };
+		6DF38E1F27F1852900B83617 /* RoleWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleWireframe.swift; sourceTree = "<group>"; };
+		91E9F49B2D3278FA43EB3F67 /* Pods-AnimaliaProd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimaliaProd.debug.xcconfig"; path = "Target Support Files/Pods-AnimaliaProd/Pods-AnimaliaProd.debug.xcconfig"; sourceTree = "<group>"; };
+		981DB9ACEC081E098DBDD380 /* Pods-AnimaliaProd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimaliaProd.release.xcconfig"; path = "Target Support Files/Pods-AnimaliaProd/Pods-AnimaliaProd.release.xcconfig"; sourceTree = "<group>"; };
+		A115741DFFF080E4AEC14B67 /* Pods-AnimaliaDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimaliaDev.release.xcconfig"; path = "Target Support Files/Pods-AnimaliaDev/Pods-AnimaliaDev.release.xcconfig"; sourceTree = "<group>"; };
+		CFC6EB144330EE481E0BE57D /* Pods-AnimaliaDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimaliaDev.debug.xcconfig"; path = "Target Support Files/Pods-AnimaliaDev/Pods-AnimaliaDev.debug.xcconfig"; sourceTree = "<group>"; };
+		E273E716A737DFF3977D1E70 /* Pods_AnimaliaProd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimaliaProd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F92548F7CF1E85FC5930C6 /* Pods_AnimaliaProd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,17 +178,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3646203E827AB6FE4E13F366 /* Pods_AnimaliaDev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D07FE122805F564002B5475 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6D07FE132805F5A1002B5475 /* CheckboxGroup */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		6D07FE132805F5A1002B5475 /* CheckboxGroup */ = {
+			isa = PBXGroup;
+			children = (
+				6D07FE172805F660002B5475 /* CheckboxGroup.swift */,
+				6D07FE1D2805F6A3002B5475 /* CheckboxGroup.xib */,
+			);
+			path = CheckboxGroup;
+			sourceTree = "<group>";
+		};
+		6D4D847B280B2E2100373E9E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6D4D847C280B2F7A00373E9E /* Commons.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6D4D847F280B331E00373E9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D4D8480280B333200373E9E /* Entities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D4D8480280B333200373E9E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6D4D8481280B337400373E9E /* SignIn.swift */,
+				6D4D8484280B349500373E9E /* Colors.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		6DF38D8027EC181000B83617 = {
 			isa = PBXGroup;
 			children = (
 				6DF38D8B27EC181000B83617 /* Animalia-ios */,
 				6DF38D8A27EC181000B83617 /* Products */,
+				868B1F2A61F293090CE05570 /* Pods */,
+				D04F1FB4997EBACC6A244123 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +272,7 @@
 		6DF38DA127EC182100B83617 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6DF38E1827F1842F00B83617 /* Register */,
 				6DF38DB527EC19D500B83617 /* Login */,
 			);
 			path = Modules;
@@ -203,6 +291,9 @@
 		6DF38DA327EC184700B83617 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6D4D847F280B331E00373E9E /* Models */,
+				6D4D847B280B2E2100373E9E /* Utils */,
+				6D07FE122805F564002B5475 /* UIComponents */,
 				6DF38DA427EC188A00B83617 /* VIPER */,
 			);
 			path = Common;
@@ -268,6 +359,47 @@
 			path = roboto;
 			sourceTree = "<group>";
 		};
+		6DF38E1827F1842F00B83617 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				6DF38E1927F1844B00B83617 /* Rol */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		6DF38E1927F1844B00B83617 /* Rol */ = {
+			isa = PBXGroup;
+			children = (
+				6DF38E1A27F1852900B83617 /* Role.storyboard */,
+				6DF38E1B27F1852900B83617 /* RoleInterfaces.swift */,
+				6DF38E1C27F1852900B83617 /* RolePresenter.swift */,
+				6DF38E1D27F1852900B83617 /* RoleViewController.swift */,
+				6DF38E1E27F1852900B83617 /* RoleInteractor.swift */,
+				6DF38E1F27F1852900B83617 /* RoleWireframe.swift */,
+			);
+			path = Rol;
+			sourceTree = "<group>";
+		};
+		868B1F2A61F293090CE05570 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFC6EB144330EE481E0BE57D /* Pods-AnimaliaDev.debug.xcconfig */,
+				A115741DFFF080E4AEC14B67 /* Pods-AnimaliaDev.release.xcconfig */,
+				91E9F49B2D3278FA43EB3F67 /* Pods-AnimaliaProd.debug.xcconfig */,
+				981DB9ACEC081E098DBDD380 /* Pods-AnimaliaProd.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D04F1FB4997EBACC6A244123 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				423B5E30E03D45ECF988132D /* Pods_AnimaliaDev.framework */,
+				E273E716A737DFF3977D1E70 /* Pods_AnimaliaProd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,6 +407,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DF38D9D27EC181100B83617 /* Build configuration list for PBXNativeTarget "AnimaliaProd" */;
 			buildPhases = (
+				3A6DA6ED902AAEEA6237911F /* [CP] Check Pods Manifest.lock */,
 				6DF38D8527EC181000B83617 /* Sources */,
 				6DF38D8627EC181000B83617 /* Frameworks */,
 				6DF38D8727EC181000B83617 /* Resources */,
@@ -292,6 +425,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DF38DAF27EC191500B83617 /* Build configuration list for PBXNativeTarget "AnimaliaDev" */;
 			buildPhases = (
+				D3423C60C57C93244C633C69 /* [CP] Check Pods Manifest.lock */,
 				6DF38DA627EC191500B83617 /* Sources */,
 				6DF38DAA27EC191500B83617 /* Frameworks */,
 				6DF38DAB27EC191500B83617 /* Resources */,
@@ -333,8 +467,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DF38D8827EC181000B83617 /* AnimaliaProd */,
 				6DF38DA527EC191500B83617 /* AnimaliaDev */,
+				6DF38D8827EC181000B83617 /* AnimaliaProd */,
 			);
 		};
 /* End PBXProject section */
@@ -352,6 +486,8 @@
 				6DF38DCE27EC1A4300B83617 /* Login.storyboard in Resources */,
 				6DF38E0027EE0D3D00B83617 /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				6DF38DF827EE0D3D00B83617 /* RobotoCondensed-Light.ttf in Resources */,
+				6DF38E2027F1852900B83617 /* Role.storyboard in Resources */,
+				6D07FE1F2805F6A3002B5475 /* CheckboxGroup.xib in Resources */,
 				6DF38E1027EE0D3D00B83617 /* Roboto-BlackItalic.ttf in Resources */,
 				6DF38DF427EE0D3D00B83617 /* Roboto-Light.ttf in Resources */,
 				6DF38E0E27EE0D3D00B83617 /* Roboto-Italic.ttf in Resources */,
@@ -382,6 +518,8 @@
 				6DF38DCF27EC1A4300B83617 /* Login.storyboard in Resources */,
 				6DF38E0127EE0D3D00B83617 /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				6DF38DF927EE0D3D00B83617 /* RobotoCondensed-Light.ttf in Resources */,
+				6DF38E2127F1852900B83617 /* Role.storyboard in Resources */,
+				6D07FE1E2805F6A3002B5475 /* CheckboxGroup.xib in Resources */,
 				6DF38E1127EE0D3D00B83617 /* Roboto-BlackItalic.ttf in Resources */,
 				6DF38DF527EE0D3D00B83617 /* Roboto-Light.ttf in Resources */,
 				6DF38E0F27EE0D3D00B83617 /* Roboto-Italic.ttf in Resources */,
@@ -402,17 +540,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A6DA6ED902AAEEA6237911F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimaliaProd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3423C60C57C93244C633C69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimaliaDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6DF38D8527EC181000B83617 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF38E2427F1852900B83617 /* RolePresenter.swift in Sources */,
+				6D4D8486280B349500373E9E /* Colors.swift in Sources */,
 				6DF38DD427EC1A4300B83617 /* LoginViewController.swift in Sources */,
+				6DF38E2827F1852900B83617 /* RoleInteractor.swift in Sources */,
 				6DF38D8D27EC181000B83617 /* AppDelegate.swift in Sources */,
+				6D4D8483280B337400373E9E /* SignIn.swift in Sources */,
 				6DF38DC427EC1A2500B83617 /* ViewInterface.swift in Sources */,
+				6DF38E2627F1852900B83617 /* RoleViewController.swift in Sources */,
+				6D07FE192805F660002B5475 /* CheckboxGroup.swift in Sources */,
+				6DF38E2227F1852900B83617 /* RoleInterfaces.swift in Sources */,
 				6DF38DD827EC1A4300B83617 /* LoginWireframe.swift in Sources */,
+				6DF38E2A27F1852900B83617 /* RoleWireframe.swift in Sources */,
 				6DF38DD027EC1A4300B83617 /* LoginInterfaces.swift in Sources */,
 				6DF38DD227EC1A4300B83617 /* LoginPresenter.swift in Sources */,
+				6D4D847E280B2F7A00373E9E /* Commons.swift in Sources */,
 				6DF38D8F27EC181000B83617 /* SceneDelegate.swift in Sources */,
 				6DF38DBE27EC1A2500B83617 /* FormatterInterface.swift in Sources */,
 				6DF38DC027EC1A2500B83617 /* UIStoryboardExtension.swift in Sources */,
@@ -427,12 +621,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF38E2527F1852900B83617 /* RolePresenter.swift in Sources */,
+				6D4D8485280B349500373E9E /* Colors.swift in Sources */,
 				6DF38DD527EC1A4300B83617 /* LoginViewController.swift in Sources */,
+				6DF38E2927F1852900B83617 /* RoleInteractor.swift in Sources */,
 				6DF38DA827EC191500B83617 /* AppDelegate.swift in Sources */,
+				6D4D8482280B337400373E9E /* SignIn.swift in Sources */,
 				6DF38DC527EC1A2500B83617 /* ViewInterface.swift in Sources */,
+				6DF38E2727F1852900B83617 /* RoleViewController.swift in Sources */,
+				6D07FE182805F660002B5475 /* CheckboxGroup.swift in Sources */,
+				6DF38E2327F1852900B83617 /* RoleInterfaces.swift in Sources */,
 				6DF38DD927EC1A4300B83617 /* LoginWireframe.swift in Sources */,
+				6DF38E2B27F1852900B83617 /* RoleWireframe.swift in Sources */,
 				6DF38DD127EC1A4300B83617 /* LoginInterfaces.swift in Sources */,
 				6DF38DD327EC1A4300B83617 /* LoginPresenter.swift in Sources */,
+				6D4D847D280B2F7A00373E9E /* Commons.swift in Sources */,
 				6DF38DA927EC191500B83617 /* SceneDelegate.swift in Sources */,
 				6DF38DBF27EC1A2500B83617 /* FormatterInterface.swift in Sources */,
 				6DF38DC127EC1A2500B83617 /* UIStoryboardExtension.swift in Sources */,
@@ -573,6 +776,7 @@
 		};
 		6DF38D9E27EC181100B83617 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91E9F49B2D3278FA43EB3F67 /* Pods-AnimaliaProd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -603,6 +807,7 @@
 		};
 		6DF38D9F27EC181100B83617 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 981DB9ACEC081E098DBDD380 /* Pods-AnimaliaProd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -633,6 +838,7 @@
 		};
 		6DF38DB027EC191500B83617 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC6EB144330EE481E0BE57D /* Pods-AnimaliaDev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -643,7 +849,7 @@
 				INFOPLIST_FILE = "Animalia-ios/Application/AnimaliaDev.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UIMainStoryboardFile = Role;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -663,6 +869,7 @@
 		};
 		6DF38DB127EC191500B83617 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A115741DFFF080E4AEC14B67 /* Pods-AnimaliaDev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -673,7 +880,7 @@
 				INFOPLIST_FILE = "Animalia-ios/Application/AnimaliaDev.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UIMainStoryboardFile = Role;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
