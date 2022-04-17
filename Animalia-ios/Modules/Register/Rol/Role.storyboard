@@ -43,7 +43,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5H-Wx-mya" customClass="CheckboxGroup" customModule="AnimaliaDev" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="346" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES"/>
                                             <bool key="isElement" value="YES"/>
@@ -67,7 +67,7 @@ reportar mascotas perdidas</string>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJc-9q-ye8" userLabel="Person" customClass="CheckboxGroup" customModule="AnimaliaDev" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="120" width="346" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES"/>
                                             <bool key="isElement" value="YES"/>
@@ -137,11 +137,22 @@ reportar mascotas perdidas</string>
                     <connections>
                         <outlet property="entity" destination="s5H-Wx-mya" id="NUp-7B-5eD"/>
                         <outlet property="person" destination="HJc-9q-ye8" id="4wO-Gi-6Hf"/>
+                        <segue destination="79x-fe-Hh4" kind="presentation" id="qCa-hK-EHe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1214.4927536231885" y="302.00892857142856"/>
+        </scene>
+        <!--Entity-->
+        <scene sceneID="vyh-su-on0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Entity" id="79x-fe-Hh4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="37D-1T-dx7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1UO-O1-2RG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2143" y="298"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gZq-1v-vBC">
@@ -184,9 +195,6 @@ reportar mascotas perdidas</string>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

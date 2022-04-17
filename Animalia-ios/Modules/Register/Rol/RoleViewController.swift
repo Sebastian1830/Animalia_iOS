@@ -33,9 +33,10 @@ final class RoleViewController: UIViewController {
     
     @IBAction func contiueButton(_ sender: Any) {
         print(groupSelected ?? "", idSelected ?? "")
+        presenter.startFlowEntity()
     }
     
-    // MARK: - Lifecycle's Methods
+    // MARK: - Lifecycle's Methods and functions override
 
     override func viewDidLoad() {
         super.viewDidLoad()

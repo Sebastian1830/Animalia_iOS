@@ -13,4 +13,5 @@ enum Colors: String {
     case DetailTextColor = "DetailTextColor"
     case InputColor = "InputColor"
     case PrimaryColor = "PrimaryColor"
+    case BackgroundStep = "BackgroundStep"
 }

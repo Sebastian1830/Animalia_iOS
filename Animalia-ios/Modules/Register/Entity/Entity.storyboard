@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mfa-Yd-dsY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Entity View Controller-->
+        <scene sceneID="XJ1-QA-Nrj">
+            <objects>
+                <viewController storyboardIdentifier="EntityViewController" id="zIc-eW-6fX" customClass="EntityViewController" customModule="AnimaliaDev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ng-Dt-lct">
+                                <rect key="frame" x="34" y="119" width="346" height="29.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primero necesitamos crear tu cuenta." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ytz-vc-end">
+                                <rect key="frame" x="98.5" y="148.5" width="217" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <color key="textColor" name="DetailTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fo5-Tk-1NA" customClass="StepLayer" customModule="AnimaliaDev" customModuleProvider="target">
+                                <rect key="frame" x="67" y="192" width="280" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pDP-iZ-CV8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalSteps">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ytz-vc-end" firstAttribute="centerX" secondItem="3ng-Dt-lct" secondAttribute="centerX" id="EDR-lB-Ffg"/>
+                            <constraint firstItem="3ng-Dt-lct" firstAttribute="top" secondItem="3pi-N7-nbV" secondAttribute="top" constant="31" id="Ipu-we-t7W"/>
+                            <constraint firstItem="Fo5-Tk-1NA" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="67" id="Mut-uK-q1t"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="Fo5-Tk-1NA" secondAttribute="trailing" constant="67" id="Pxd-bH-bOW"/>
+                            <constraint firstItem="Fo5-Tk-1NA" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="TBM-hi-C3M"/>
+                            <constraint firstItem="3ng-Dt-lct" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="34" id="c5F-pW-AgJ"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="3ng-Dt-lct" secondAttribute="trailing" constant="34" id="tKD-dV-mQZ"/>
+                            <constraint firstItem="Ytz-vc-end" firstAttribute="top" secondItem="3ng-Dt-lct" secondAttribute="bottom" id="wF6-AN-10g"/>
+                            <constraint firstItem="Fo5-Tk-1NA" firstAttribute="top" secondItem="Ytz-vc-end" secondAttribute="bottom" constant="28" id="yfv-Ef-KSC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Bk-PV-bgB"/>
+                    <connections>
+                        <outlet property="steps" destination="Fo5-Tk-1NA" id="9Dg-Rn-wTB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3944.9275362318845" y="302.00892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YYs-42-2If">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mfa-Yd-dsY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ANR-Zd-RJf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zIc-eW-6fX" kind="relationship" relationship="rootViewController" id="jLO-AH-8qY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oC8-xh-4HG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3034.7826086956525" y="302.00892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="0.98039215686274506" green="0.98431372549019602" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DetailTextColor">
+            <color red="0.69411764705882351" green="0.69803921568627447" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

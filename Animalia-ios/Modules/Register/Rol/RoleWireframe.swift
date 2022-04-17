@@ -32,4 +32,7 @@ final class RoleWireframe: BaseWireframe<RoleViewController> {
 // MARK: - Extensions -
 
 extension RoleWireframe: RoleWireframeInterface {
+    func navigationToEntity() {
+        navigationController?.pushWireframe(EntityWireframe())
+    }
 }

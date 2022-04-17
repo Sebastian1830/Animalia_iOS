@@ -27,21 +27,9 @@ class CheckboxGroup: UIButton {
     
     @IBInspectable var id: String = ""
     @IBInspectable var group: String = ""
-    @IBInspectable var iconItem: UIImage = UIImage() {
-        willSet {
-            icon.image = newValue
-        }
-    }
-    @IBInspectable var titleItem: String = "" {
-        willSet {
-            title.text = newValue
-        }
-    }
-    @IBInspectable var detailItem: String = "" {
-        willSet {
-            details.text = newValue
-        }
-    }
+    @IBInspectable var iconItem: UIImage = UIImage() { willSet { icon.image = newValue } }
+    @IBInspectable var titleItem: String = "" { willSet { title.text = newValue } }
+    @IBInspectable var detailItem: String = "" { willSet { details.text = newValue } }
     
     // MARK: - Lifecycle's Methods
     override init(frame: CGRect) {
@@ -56,23 +44,12 @@ class CheckboxGroup: UIButton {
         setupView()
     }
     
-    // MARK: - Functions
-    private func initialize(){
+    private func initialize() {
         insideview = loadViewFromNib()
         setupUI(view: insideview ?? UIView())
     }
     
-    private func loadViewFromNib() -> UIView! {
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
-        return nib.instantiate( withOwner: self, options: nil).first as? UIView
-    }
-    
-    private func setupUI(view: UIView?){
-        view?.frame = self.bounds
-        addSubview(view ?? UIView())
-    }
-    
+    // MARK: - Functions
     private func setupView() {
         container.backgroundColor = .clear
         container.isOpaque = false
@@ -80,12 +57,6 @@ class CheckboxGroup: UIButton {
         container.layer.borderColor = UIColor(named: Colors.BorderColor.rawValue)?.cgColor
         container.layer.masksToBounds = true
         container.layer.cornerRadius = 25
-    }
-    
-    private func defaultDesignable() {
-        self.iconItem = UIImage()
-        self.titleItem = ""
-        self.detailItem = ""
     }
     
     public func handleCustomTap(_ handler: @escaping () -> ()) {

@@ -11,12 +11,14 @@
 import UIKit
 
 protocol RoleWireframeInterface: WireframeInterface {
+    func navigationToEntity()
 }
 
 protocol RoleViewInterface: ViewInterface {
 }
 
 protocol RolePresenterInterface: PresenterInterface {
+    func startFlowEntity()
 }
 
 protocol RoleInteractorInterface: InteractorInterface {

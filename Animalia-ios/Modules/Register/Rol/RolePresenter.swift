@@ -34,4 +34,10 @@ final class RolePresenter {
 // MARK: - Extensions -
 
 extension RolePresenter: RolePresenterInterface {
+    func startFlowEntity() {
+        wireframe.navigationToEntity()
+    }
+}
+
+private extension RolePresenter {
 }
