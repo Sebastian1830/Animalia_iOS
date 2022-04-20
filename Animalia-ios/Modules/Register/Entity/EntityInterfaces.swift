@@ -14,6 +14,9 @@ protocol EntityWireframeInterface: WireframeInterface {
 }
 
 protocol EntityViewInterface: ViewInterface {
+    func validateFormFor(_ textField: UITextField) -> Bool
+    func validateAllForm() -> Bool
+    func sendForm() -> Void
 }
 
 protocol EntityPresenterInterface: PresenterInterface {

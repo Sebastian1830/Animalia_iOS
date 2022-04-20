@@ -37,7 +37,6 @@ class StepLayer: UIView {
     private func initialize() {
         insideview = loadViewFromNib()
         setupUI(view: insideview ?? UIView())
-        drawStep(current: currentStep)
     }
     
     private func setupView(_ current: Int16) {
@@ -61,6 +60,8 @@ class StepLayer: UIView {
     }
     
     func start() {
-        drawStep(current: 1)
+        DispatchQueue.main.async {
+            self.drawStep(current: 1)
+        }
     }
 }

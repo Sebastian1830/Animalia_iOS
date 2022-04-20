@@ -7,6 +7,6 @@
 
 import Foundation
 
-class Commons {
+class Common {
     var flowSignIn: SignIn?
 }

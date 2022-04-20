@@ -14,12 +14,19 @@ final class EntityViewController: UIViewController {
     
     private var currentStep: Int16?
 
+    @IBOutlet weak var insideview: UIView!
     @IBOutlet weak var steps: StepLayer!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var repeatPassword: UITextField!
+    @IBOutlet weak var emailMessage: UILabel!
+    @IBOutlet weak var passwordMessage: UILabel!
+    @IBOutlet weak var repeatPasswordMessage: UILabel!
     // MARK: - Public properties -
     
     var detail: String?
     @IBAction func action(_ sender: Any) {
-        steps.next()
+        sendForm()
     }
     
     @IBAction func back(_ sender: Any) {
@@ -37,18 +44,90 @@ final class EntityViewController: UIViewController {
     
     private func setupUI() {
         steps?.delegate = self
+        email.delegate = self
+        password.delegate = self
+        repeatPassword.delegate = self
         steps.start()
+        email.setLeftPaddingPoints(24)
+        email.setRightPaddingPoints(24)
+        email.attributedPlaceholder = NSAttributedString(string: "Ejem. correo@correo.com", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: Colors.DetailTextColor.rawValue)!])
+        password.setLeftPaddingPoints(24)
+        password.setRightPaddingPoints(24)
+        password.attributedPlaceholder = NSAttributedString(string: "Ingrese la contraseña", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: Colors.DetailTextColor.rawValue)!])
+        repeatPassword.setLeftPaddingPoints(24)
+        repeatPassword.setRightPaddingPoints(24)
+        repeatPassword.attributedPlaceholder = NSAttributedString(string: "Ingrese la contraseña", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: Colors.DetailTextColor.rawValue)!])
     }
-
 }
 
 // MARK: - Extensions -
 
 extension EntityViewController: EntityViewInterface {
+    func validateFormFor(_ textField: UITextField) -> Bool {
+        switch textField {
+        case email:
+            let (valid, message) = validateEmail(textField)
+            emailMessage.text = message
+            UIView.animate(withDuration: 0.25) { self.emailMessage.isHidden = valid }
+            return valid
+        case password:
+            let (valid, message) = validatePassword(textField)
+            passwordMessage.text = message
+            UIView.animate(withDuration: 0.25) { self.passwordMessage.isHidden = valid }
+            return valid
+        case repeatPassword:
+            let (valid, message) = validateRepeatPassword(password, textField)
+            repeatPasswordMessage.text = message
+            UIView.animate(withDuration: 0.25) { self.repeatPasswordMessage.isHidden = valid }
+            return valid
+        default:
+            return false
+        }
+    }
+    
+    func validateAllForm() -> Bool {
+        let (validEmail, _) = validateEmail(email)
+        let (validPassword, _) = validatePassword(password)
+        let (validRepeatPassword, _) = validateRepeatPassword(password, repeatPassword)
+        
+        return validEmail && validPassword && validRepeatPassword
+    }
+    
+    func sendForm() {
+        if validateAllForm() { steps.next() }
+    }
 }
 
 extension EntityViewController: StepLayerProtocol {
     func getCurrentStep(_ step: Int16) {
         self.currentStep = step
+    }
+}
+
+extension EntityViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let isFieldValidate = validateFormFor(textField)
+        
+        switch textField {
+        case email:
+            if isFieldValidate { password.becomeFirstResponder() }
+        case password:
+            if isFieldValidate { repeatPassword.becomeFirstResponder() }
+        case repeatPassword:
+            insideview.endEditing(true)
+            if textField.returnKeyType == .send { sendForm() }
+        default:
+            email.resignFirstResponder()
+        }
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        _ = validateFormFor(textField)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.insideview.endEditing(true)
     }
 }
